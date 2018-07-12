@@ -6,7 +6,7 @@
 " Last Modified: 09 Apr 2014
 " -----------------------------------------------------------------------------
 
-function! gruvbox#invert_signs_toggle()
+function! ryansgruvbox#invert_signs_toggle()
   if g:gruvbox_invert_signs == 0
     let g:gruvbox_invert_signs=1
   else
@@ -18,21 +18,21 @@ endfunction
 
 " Search Highlighting {{{
 
-function! gruvbox#hls_show()
+function! ryansgruvbox#hls_show()
   set hlsearch
   call GruvboxHlsShowCursor()
 endfunction
 
-function! gruvbox#hls_hide()
+function! ryansgruvbox#hls_hide()
   set nohlsearch
   call GruvboxHlsHideCursor()
 endfunction
 
-function! gruvbox#hls_toggle()
+function! ryansgruvbox#hls_toggle()
   if &hlsearch
-    call gruvbox#hls_hide()
+    call ryansgruvbox#hls_hide()
   else
-    call gruvbox#hls_show()
+    call ryansgruvbox#hls_show()
   endif
 endfunction
 
